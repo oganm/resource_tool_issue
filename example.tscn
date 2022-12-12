@@ -1,8 +1,12 @@
-[gd_scene load_steps=2 format=3 uid="uid://cd35gf74ekxws"]
+[gd_scene load_steps=4 format=3 uid="uid://cd35gf74ekxws"]
 
 [ext_resource type="Script" path="res://holder.gd" id="1_cyvq2"]
+[ext_resource type="Script" path="res://tool_resource.gd" id="2_e2epn"]
 
-[node name="Node2D" type="Node2D"]
+[sub_resource type="Resource" id="Resource_1buw0"]
+script = ExtResource("2_e2epn")
+variable = 2
 
-[node name="holder" type="Node2D" parent="."]
+[node name="Holder" type="Node2D"]
 script = ExtResource("1_cyvq2")
+tool_res = SubResource("Resource_1buw0")
