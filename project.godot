@@ -1,0 +1,37 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+_global_script_classes=[{
+"base": "Node2D",
+"class": &"holder",
+"language": &"GDScript",
+"path": "res://holder.gd"
+}, {
+"base": "Resource",
+"class": &"just_resource",
+"language": &"GDScript",
+"path": "res://just_resource.gd"
+}, {
+"base": "Resource",
+"class": &"tool_resource",
+"language": &"GDScript",
+"path": "res://tool_resource.gd"
+}]
+_global_script_class_icons={
+"holder": "",
+"just_resource": "",
+"tool_resource": ""
+}
+
+[application]
+
+config/name="resource_tool_issue"
+config/features=PackedStringArray("4.0", "Forward Plus")
+config/icon="res://icon.svg"
